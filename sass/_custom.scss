@@ -1,0 +1,119 @@
+//seperate sass for specific classes/IDs
+body{
+    font-family: $brand-font;
+    background-color: rgb(176, 218, 215);
+}
+
+h2{
+    text-align: center;
+    color: darken( $brand-green, 10% );
+    font-family: $brand-font;
+    font-size: 1.25em;
+}
+
+.slider{
+    padding: 0px 0px 25px 0px;
+    max-width: 100%;
+    .carousel-caption {
+        bottom: 0px;
+        padding-bottom: 0px;
+        margin: 0 auto;
+        width: 100%;
+        left: 0;
+        background-color: rgba(39, 39, 39, 0.2);
+    }
+}
+
+#add-text{
+    font-size: 0.75em;
+    color: $gray-600;
+    text-align: center;
+}
+
+.serv{
+    text-align: center;
+    padding: 10px;
+    .fas{
+        color: darken( $brand-green, 5% );
+        font-size: 2em;
+        padding: 15px;
+    }
+    .serv3, .serv4{
+        text-align: center;
+    }
+}
+
+.container{
+    background-color: lighten( $brand-purple, 10% );
+
+    .below-fold{
+        padding: 25px 0;
+    }
+
+    .collapsed{
+        padding: 0px;
+    }
+}
+
+
+a{
+    color: $brand-green;
+    &:focus,
+    &.focus {
+        color: darken( $brand-green, 5% );
+        text-decoration: none;
+        border-color: transparent;
+        box-shadow: none;
+    }
+    .fas:hover{
+        color: $brand-green;
+        transition: all 0.3s ease-in-out;
+    }
+}
+
+a:hover{
+    color: $teal;
+    text-decoration: none;
+}
+
+footer{
+    margin-top: 25px;
+    a{
+        text-align: center;
+        font-size: 1.25em;
+    }
+    .footr{
+        text-align: center;
+        margin: 65px 0px 15px 0px;
+    }
+}
+
+
+@media screen and (min-width: $mobile) {
+    body{
+        background-color: white;
+        h2{
+            font-size: 2em;
+        }
+    }
+
+    .serv{
+        padding: 25px;
+        .fas{
+            font-size: 3.5em;
+        }
+    }
+
+    .video{
+        margin-bottom: 25px;
+    }
+
+}
+
+@media screen and (max-width: $desktop) and (min-width: $tablet){
+    .serv{
+        .serv3, .serv4{
+            text-align: left;
+        }
+    }
+}
